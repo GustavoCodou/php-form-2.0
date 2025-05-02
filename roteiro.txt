@@ -1,0 +1,5 @@
+
+Passos:
+
+1- Fazer a conexão com o banco de dados (Criar a api mysql) em um arquivo separado
+2- Fazer o login de formulario
