@@ -1,5 +1,39 @@
 
 Passos:
 
-1- Fazer a conexão com o banco de dados (Criar a api mysql) em um arquivo separado
-2- Fazer o login de formulario
+
+- Crie o banco de dados
+
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+    password VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+    email VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+    reg_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
+
+
+- Fazer a conexão com o banco de dados (Criar a api mysql) em um arquivo separado
+- Sempre que for usar o banco em um arquivo, de um include nele
+- Fazer uma pagina de inicio que se clicar vai para o formulario de registro
+-  Ai nesse formulario vamos fazer a parte de registro
+- Na parte de inicio vamos colocar a parte de clicar e ir para o login e depois para a de registro
+
+
+ARquivo de registro
+- No arquivo de registro lembre de incluir o banco de dados, porque vamos usar ele
+- Crie a variavel de erro porque depois vamos ter que printar se necessario
+- Crie o formulario com html para pegar as informações: username, email, password, confirm_password
+- Crie o back end usando php e metodo post para receber os itens do formulario
+- Se a senha for igual a confirmação, então vamos para o registro
+- Temos que verificar se o emais já existe
+- Se não existe entra no banco de dados
+
+Arquivo de login
+- Agora vamos criar um arquivo de login
+- Já que já fez o de registro, vai ser mais facil porque é quase a mesma coisa
+- O formulario e o metodo post é quase igual, mas dessa vez só username e password
+- Ai verificamos se tem o username, se tiver verificamos se a senha é igual a senha do banco de dados
+- use session start para guardar os dados
+- Aqui verificamos se o usuario já foi logado, se sim sempre redirecione para  o admin arquiv
