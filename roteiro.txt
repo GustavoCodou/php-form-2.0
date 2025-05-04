@@ -36,4 +36,26 @@ Arquivo de login
 - O formulario e o metodo post é quase igual, mas dessa vez só username e password
 - Ai verificamos se tem o username, se tiver verificamos se a senha é igual a senha do banco de dados
 - use session start para guardar os dados
-- Aqui verificamos se o usuario já foi logado, se sim sempre redirecione para  o admin arquiv
+- Aqui verificamos se o usuario já foi logado, se sim sempre redirecione para  o admin Arquivo
+
+Agora vamos mudar o index, ao invés de aparecer register e login, se o usuario já tiver logado uma vez,
+vai aparecer 
+
+Sessão de index
+- Tem que ir no arquivo de index e fazer um if com php, se logged in for como true, então
+- Vai aparecer admin no lugar de login se já tiver logado
+
+Arquivo de logout
+- Aqui vamos iniciar a sessão depois destruila
+- Adicione uma palavra logout no index linkavel para o logout
+
+- Refatorar o codigo é principalmente arrumar para não repetir ele, para isso
+vamos criar uns arquivos apenas para repetirlos para otimizar a organização na pasta partials
+
+
+Arquivo de header:
+- Dá para colocar o cabeçalho do html
+- O session_start e o include do banco também
+
+Arquivo de footer:
+-
