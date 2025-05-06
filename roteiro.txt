@@ -52,10 +52,15 @@ Arquivo de logout
 - Refatorar o codigo é principalmente arrumar para não repetir ele, para isso
 vamos criar uns arquivos apenas para repetirlos para otimizar a organização na pasta partials
 
+Arquivos do partials:
 
 Arquivo de header:
-- Dá para colocar o cabeçalho do html
+- Dá para colocar o cabeçalho do html, principalmente do index
 - O session_start e o include do banco também
 
 Arquivo de footer:
--
+- Só coloca o <body> e <html> e já era, no lugar que tava coloca include do arquivo
+
+
+Arquivo do navigation:
+- Tira a parte de navegação do index e coloca no navigation
