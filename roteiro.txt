@@ -61,6 +61,14 @@ Arquivo de header:
 Arquivo de footer:
 - Só coloca o <body> e <html> e já era, no lugar que tava coloca include do arquivo
 
-
 Arquivo do navigation:
 - Tira a parte de navegação do index e coloca no navigation
+
+Coloque o include de todos os arquivos do partials nos outros arquivs
+
+Agora estilização:
+- Vamos estilizar o header usando css. Aqui faça do jeito que achar melhor
+
+
+Vamos colocar uma nova fucionalidade na parte de navegação
+Use o $_server['PHP_self'] para saber qual pagina está. Ele 
