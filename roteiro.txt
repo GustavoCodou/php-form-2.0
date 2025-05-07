@@ -72,3 +72,7 @@ Agora estilização:
 
 Vamos colocar uma nova fucionalidade na parte de navegação
 Use o $_server['PHP_self'] para saber qual pagina está. Ele 
+
+
+Arquivo de funções:
+Daqui para a frente já é um pouco mais complicado então vamos deixar como parte 2
