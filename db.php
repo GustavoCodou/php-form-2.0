@@ -2,7 +2,7 @@
 $host = "localhost";     // ou IP do servidor
 $usuario = "root";       // padrão no XAMPP
 $senha = "";             // vazio no XAMPP
-$banco = "meu_banco";
+$banco = "login_app";
 
 // Criar conexão
 $conn = new mysqli($host, $usuario, $senha, $banco);

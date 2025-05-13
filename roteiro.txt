@@ -2,7 +2,14 @@
 Passos:
 
 
-- Crie o banco de dados
+Crie o banco de dados:
+
+- Start o wamp
+
+Entre n:
+http://localhost/phpmyadmin
+
+Crie essa tabela da sem sintaxe mesmo no manual:
 
 CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT,
@@ -13,18 +20,29 @@ CREATE TABLE users (
     PRIMARY KEY (id)
 );
 
-// Arquivo de banco de dados:
+Agora para conseguir utilizar o arquivo ele tem que estar na pasta do wamp se não n starta
+
+C:\wamp64\www\
+
+http://localhost/Form%202.0/index.php
+
+Agora está iniciado meu queridão!
+Agora começamos a fazer as coisas.
+
+
+
+Arquivo de banco de dados:
 - Fazer a conexão com o banco de dados (Criar a api mysql) em um arquivo separado
 - Sempre que for usar o banco em um arquivo, de um include nele
 
 - Coloque as variaveis com os dados do banco de dados
 - Use a função para conectar
-- Depois use uma condição para 
+- Depois use uma condição para ver se conectou porque se não dá erro.
 
 
 Arquivo index
 - Fazer uma pagina de inicio que se clicar vai para o formulario de registro
--  Ai nesse formulario vamos fazer a parte de registro
+- Ai nesse formulario vamos fazer a parte de registro
 - Na parte de inicio vamos colocar a parte de clicar e ir para o login e depois para a de registro
 
 
