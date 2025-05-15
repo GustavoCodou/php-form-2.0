@@ -7,7 +7,7 @@
 </head>
 <body>
     <li>
-        <a href="register.html">Registro</a>
+        <a href="register.php">Registro</a>
     </li>
 
     <li>
