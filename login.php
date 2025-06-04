@@ -2,6 +2,11 @@
 
 include 'db.php';
 
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    echo "Nome: " . $_POST["nome"] . "<br>";
+    echo "Senha: " . $_POST["senha"] . "<br>";
+    echo "Email: " . $_POST["email"];
+}
 
 ?>
 
