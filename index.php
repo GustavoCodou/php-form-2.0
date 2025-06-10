@@ -9,7 +9,7 @@
     <li>
         <a href="register.php">Registro</a>
     </li>
-
+    Tem que ver como faz para ver se o usuario já está logado
     <li>
         <a href="login.html">Login</a>
     </li>
