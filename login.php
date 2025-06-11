@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include 'db.php';
 
 $conn = new mysqli("localhost", "usuario", "senha", "nome_do_banco");
