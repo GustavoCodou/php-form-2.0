@@ -32,6 +32,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 
+if ($senha === $row["senha"]) {
+    $_SESSION["usuario"] = $nome; // Ou poderia ser o ID do usuário se quiser
+    echo "Login realizado com sucesso!";
+    // Redirecionar para outra página
+    header("Location: dashboard.php");
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>

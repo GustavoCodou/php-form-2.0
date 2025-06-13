@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["usuario"])) {
+    // Usuário não está logado
+    header("Location: login.php");
+    exit();
+}
+
+// Aqui o usuário está logado
+echo "Bem-vindo, " . $_SESSION["usuario"];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
