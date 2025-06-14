@@ -7,7 +7,6 @@ if (!isset($_SESSION["usuario"])) {
     exit();
 }
 
-// Aqui o usuário está logado
 echo "Bem-vindo, " . $_SESSION["usuario"];
 ?>
 
