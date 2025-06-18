@@ -1,3 +1,15 @@
+<!-- Em programação tem um monte de maneira de conectar com base de dados
+ isso se chama API
+
+API significa Application Programming Interface (em português: Interface de Programação de Aplicações).
+Uma API é um meio de comunicação entre dois sistemas. 
+Ela permite que um software "converse" com outro, pedindo ou enviando informações.
+
+ Mas com o mysqli usamos isso aqui
+ $conn = new mysqli("localhost", "usuario", "senha", "nome_do_banco");
+  -->
+
+
 <?php
 session_start();
 include 'db.php';
@@ -49,7 +61,7 @@ if ($senha === $row["senha"]) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de login</title>
 </head>
-<body>
+<body> 
     
 </body>
 </html>
