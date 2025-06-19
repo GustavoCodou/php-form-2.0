@@ -1,4 +1,8 @@
-<!-- Em programação tem um monte de maneira de conectar com base de dados
+<!-- 
+ 
+
+18/06/2025
+Em programação tem um monte de maneira de conectar com base de dados
  isso se chama API
 
 API significa Application Programming Interface (em português: Interface de Programação de Aplicações).

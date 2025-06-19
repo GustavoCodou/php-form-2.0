@@ -1,4 +1,19 @@
+
+<!-- 
+ 
+Temos que colocar um include, para termos as coisas de outra pagina
+sem copiar o codigo
+
+include 'db.php'
+
+tem o require também que diz se o arquivo der pau, a pagina falha
+
+  -->
+
 <?php
+
+include 'db.php'
+
 session_start();
 
 if (!isset($_SESSION["usuario"])) {
