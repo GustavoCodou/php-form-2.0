@@ -2,24 +2,18 @@
 
 include 'db.php';
 
+$error ='';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $password = mysqli_real_escape_string($conn, $_POST['password']);
+    $confirm_password = mysqli_real_escape_string($conn, $_POST['confirm_password']);
+
     echo "Senha: " . $_POST["senha"] . "<br>";
     echo "Email: " . $_POST["email"];
 }
 
-$stmt = $conn->prepare("INSERT INTO usuarios (nome, email) VALUES (?, ?)");
-$stmt->bind_param("ss", $nome, $email); // "ss" = duas strings
-
-// 4. Executar a query
-if ($stmt->execute()) {
-    echo "Dados inseridos com sucesso!";
-} else {
-    echo "Erro ao inserir: " . $stmt->error;
-}
-
-// 5. Fechar conexões
-$stmt->close();
 
 
 ?>
@@ -33,12 +27,22 @@ $stmt->close();
 </head>
 <body>
     
-    <form method ="post">
-        <input type="text" name="nome" placeholder="Seu nome">
-        <input type="text" name="password" placeholder="Sua senha">
-        <input type="email" name="email" placeholder="Seu email">
+    <form method="post">
+    <label for="username">Nome de usuário:</label>
+    <input type="text" id="username" name="username" placeholder="Seu nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" placeholder="Sua senha" required>
+
+    <label for="confirm_password">Confirmar senha:</label>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme sua senha" required>
+
     <button type="submit">Enviar</button>
-    </form>
+</form>
+
 
 
 </body>
