@@ -28,17 +28,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
     
     <form method="post">
-    <label for="username">Nome de usuário:</label>
-    <input type="text" id="username" name="username" placeholder="Seu nome" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Seu email" required>
+    <input type="email" id="email" name="email" ><br><br>
 
     <label for="password">Senha:</label>
-    <input type="password" id="password" name="password" placeholder="Sua senha" required>
+    <input type="password" id="password" name="password" ><br><br>
 
     <label for="confirm_password">Confirmar senha:</label>
-    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme sua senha" required>
+    <input type="password" id="confirm_password" name="confirm_password"><br><br>
 
     <button type="submit">Enviar</button>
 </form>
