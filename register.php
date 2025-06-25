@@ -12,7 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 
     if($password !== $confirm_password){
-        echo "Password do not match";
+        $error= "Password do not match";
+    } else {
+        $sql = "INSERT INTO"
     }
 
 
