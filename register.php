@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if($password !== $confirm_password){
         $error= "Password do not match";
     } else {
-        $sql = "INSERT INTO"
+        $sql = "INSERT INTO users (username,password"
     }
 
 
